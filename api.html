@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking appointment</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js" integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="outter-box">
+        <div class="inner-box">
+            <header class="singup-header">
+                <h1>Book a Call</h1>
+                <p>Book a call slot and represenntative will call you within 1hr of selected time</p>
+            </header>
+            <hr>
+            <main class="singup-body">
+                <form id="form-head" >
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="fullname" placeholder="Enter Your Full Name" required>
+                        <br>
+                    </p>
+
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="emailId" placeholder="Enter Your Email Id " required>
+                        <br>
+                    </p>
+                    <p>
+
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number" placeholder="Enter Your Phone Number" required>
+                        <br>
+                    </p>
+
+                    <p>
+                        <label for="date">Date to Call</label>
+                        <input type="datetime-local" id="date" name="date_to_call" required>
+                        <br>
+
+                    </p>
+                    <p>
+
+                        <input type="submit" id="submit" value="Get a Call">
+
+
+                    </p>
+                </form>
+            <ul id="listOfItem" ></ul>
+            </main>
+        </div>
+        <div class="cricle c1"></div>
+        <div class="cricle c2"></div>
+    </div>
+
+</body>
+<script src="api.js"></script>
+
+</body>
+
+</html>
