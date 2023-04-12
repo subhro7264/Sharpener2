@@ -14,7 +14,7 @@ function saveLocalStroage(e) {
         phone,
         dateToCall
     }
-    axios.post(`https://crudcrud.com/api/c34e6520e5c24a2a91f3388a134f436c/appData`, obj)
+    axios.post(`https://crudcrud.com/api/785e2f54e72b4a70bbd7e7fc3672d0c9/appData`, obj)
         .then((res) => {
             showOnTheScreen(res.data)
             console.log(res)
@@ -27,6 +27,26 @@ function saveLocalStroage(e) {
     // showOnTheScreen(obj);
 
 }
+
+
+
+
+window.addEventListener("DOMContentLoaded",()=>{
+    axios.get("https://crudcrud.com/api/785e2f54e72b4a70bbd7e7fc3672d0c9/appData")
+    .then((res) => {
+        console.log(res)
+        for (let i = 0; i < res.data.length; i++) {
+            showOnTheScreen(res.data[i]);
+            
+        }
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+})
+
+
+
 
 function showOnTheScreen(obj) {
     const parantElm = document.getElementById("listOfItem");
