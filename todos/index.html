@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+        integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="outter-box">
+        <div class="inner-box">
+            <form id="form-head">
+                <p>
+                    <label for="Todo">Todos</label>
+                    <input type="text" id="Todo" name="Todo" placeholder="Enter Your  Todos" required>
+                    <br>
+                </p>
+
+
+                <p>
+                    <label for="Description">Description</label>
+                    <input type="Description" id="Description" name="Description" placeholder=" Todos Description "
+                        required>
+                    <br>
+                </p>
+                <p>
+
+                    <input type="submit" id="submit" value="AddItem">
+
+                </p>
+            </form>
+
+          
+            <ul id="listOfItem"></ul>
+
+
+            <div>
+                <h2>Todos Done</h2>
+            <ol id="tdone">
+               
+            </ol>
+            </div>
+            </main>
+        </div>
+        <div class="cricle c1"></div>
+        <div class="cricle c2"></div>
+    </div> 
+
+</body>
+<script src="script.js"></script>
+
+</body>
+
+</html>
